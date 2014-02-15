@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/github.css"}}" />
+    <script type="text/javascript" src="{{asset "js/prettify.js"}}"></script>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}" onload="prettyPrint()">
+
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+
+    <footer class="site-footer">
+        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe via RSS!</span></a>
+        <div class="inner">
+
+            <section class="icons">
+                
+                <div class="social-icons">
+                    <ul>
+                        <li class="twitter"><a title="Me on Twitter" href="https://twitter.com/#!/ayoungh">Twitter</a></li>
+                        <li class="facebook"><a title="My Facebook profile" href="http://facebook.com/ayoungh">Facebook</a></li>
+                        <li class="googleplus"><a title="My Google Plus profile" href="https://plus.google.com/108611467242731207538/posts">Google Plus</a></li>
+                        <li class="dribbble"><a title="My Dribbbles" href="http://dribbble.com/ayoungh">Dribblbe</a></li>
+                        <li class="forrst"><a title="My Forrst posts" href="http://forrst.com/people/ayoungh">Forrst</a></li>
+                        <li class="pinterest"><a title="My Pins on Pinterest" href="http://pinterest.com/ayoungh/">Pinterest</a></li>
+                        <li class="lastfm"><a title="What I listen to on LastFM" href="http://www.last.fm/user/causecaos">Last FM</a></li>
+                    </ul>
+                </div>
+        
+                <div class="tech-icons">
+                    <ul>
+                        <li class="proud">Proudly using: </li>
+                        <li class="ghost"><a title="Proudly published with Ghost" href="http://ghost.org">Ghost</a></li>
+                        <li class="jquery"><a title="Jquery" href="http://jquery.com/">Jquery</a></li>
+                        <li class="css3"><a title="CSS3" href="http://www.w3.org/Style/CSS/">CSS3</a></li>
+                        <li class="semantics"><a title="HTML5 Semantics" href="http://www.w3.org/html/">HTML5 Semantics</a></li>
+                        <li class="html5"><a title="Powered by HTML5" href="http://www.w3.org/html/">HTML5</a></li>
+                    </ul>
+                </div>
+
+
+            </section>
+
+
+             <section class="copyright">All content copyright <a href="{{@blog.url}}/">Anthony Young</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
+             </section>
+        </div>
+    </footer>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! The main JavaScript file for AYOUNGH }}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>
