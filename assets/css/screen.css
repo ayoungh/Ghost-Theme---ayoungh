@@ -586,6 +586,7 @@ textarea:focus {
     display: inline-block;
     padding: 2.5rem 0;
     font-size: 18.rem;
+    color: #ffffff;
 }
 
 /* Keep large images within the bounds of the post-width */
@@ -942,6 +943,8 @@ textarea:focus {
 .social-icons li.forrst a:hover {background-color: #778E72;}    
 .social-icons li.pinterest a {background: url('../img/social/pinterest.png') no-repeat 0 0;}
 .social-icons li.pinterest a:hover {background-color: #CB2027;} 
+.social-icons li.github a {background: url('../img/social/github.png') no-repeat 0 0;}
+.social-icons li.github a:hover {background-color: #000000;}  
 .social-icons li.lastfm a {background: url('../img/social/lastfm.png') no-repeat 0 0;}
 .social-icons li.lastfm a:hover {background-color: #d30700;}    
 
